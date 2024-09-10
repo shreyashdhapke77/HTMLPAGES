@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple HTML audio player example">
+    <title>Audio Player Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        audio {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Audio Player</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Now Playing: Classical Music</h2>
+        <p>Listen to some relaxing classical tunes.</p>
+
+        <!-- Audio player -->
+        <audio controls>
+            <source src="./assets/audio-file.mp3" type="audio/mp3">
+            <source src="audio-file.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Additional HTML tags -->
+        <figure>
+            <img src="./assets/music-image.jpg" alt="Classical music image" width="300">
+            <figcaption>An image representing the classical music genre.</figcaption>
+        </figure>
+    </section>
+
+    <article>
+        <h3>About the Music</h3>
+        <p>The piece you are listening to is a famous classical composition by a renowned composer.</p>
+        <ul>
+            <li>Composed by: Composer Name</li>
+            <li>Year: 18th Century</li>
+            <li>Genre: Classical</li>
+        </ul>
+    </article>
+</div>
+
+<footer>
+    <p>&copy; 2024 Audio Player. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
